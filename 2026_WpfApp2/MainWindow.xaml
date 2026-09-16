@@ -114,7 +114,7 @@
                    Margin="32,249,32,33"
                    TextWrapping="Wrap"
                    FontSize="18"
-                   Padding="10,10,10,10" Foreground="White">
+                   Padding="10,10,10,10" Foreground="Black">
             <TextBlock.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
