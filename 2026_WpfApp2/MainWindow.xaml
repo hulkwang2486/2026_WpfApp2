@@ -5,9 +5,124 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2026_WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="#FFB9EBF1">
+        Title="Week 02"
+        Height="556"
+        Width="856"
+        Background="#FFD5F6FF">
+
     <Grid>
-        <Label Content="Hello World!" FontSize="36" Margin="33,21,438,305"/>
+
+        <Label Content="Hello World!"
+               HorizontalAlignment="Left"
+               Margin="329,12,0,0"
+               VerticalAlignment="Top"
+               FontSize="30" Width="265" Height="59"/>
+
+        <Label Content="視窗程式設計很好玩"
+               HorizontalAlignment="Left"
+               Margin="564,22,0,0"
+               VerticalAlignment="Top"
+               Height="55"
+               Width="328"
+               FontSize="24"
+               Foreground="#FF79B583"
+               FontWeight="Bold"/>
+
+        <Label Content="姓名"
+               HorizontalAlignment="Left"
+               Margin="43,80,0,0"
+               VerticalAlignment="Top"
+               Height="43"
+               Width="71"
+               FontSize="20"
+               Background="#00000000"
+               Foreground="#FFEF1616"/>
+
+        <TextBox x:Name="nameTextBox"
+                 HorizontalAlignment="Left"
+                 Margin="119,80,0,0"
+                 TextWrapping="Wrap"
+                 Width="250"
+                 Height="40"
+                 FontSize="20"
+                 VerticalContentAlignment="Center"
+                 VerticalAlignment="Top"/>
+
+        <Label Content="電話"
+               HorizontalAlignment="Left"
+               Margin="43,123,0,0"
+               VerticalAlignment="Top"
+               Height="43"
+               Width="71"
+               FontSize="20"
+               Background="#00000000"
+               Foreground="#FFEF1616"/>
+
+        <TextBox x:Name="telTextBox"
+                 HorizontalAlignment="Left"
+                 Margin="119,126,0,0"
+                 TextWrapping="Wrap"
+                 Width="250"
+                 Height="40"
+                 FontSize="20"
+                 VerticalContentAlignment="Center"
+                 VerticalAlignment="Top"/>
+
+        <Button x:Name="okButton"
+                Content="確認"
+                HorizontalAlignment="Left"
+                Margin="431,98,0,0"
+                VerticalAlignment="Top"
+                Height="49"
+                Width="135"
+                FontSize="22"
+                FontWeight="Bold"
+                Click="okButton_Click"/>
+
+        <Label Content="輸入一個數值"
+               HorizontalAlignment="Left"
+               Margin="27,175,0,0"
+               VerticalAlignment="Top"
+               Height="43"
+               Width="157"
+               FontSize="20"
+               Background="#00000000"
+               Foreground="#FFEF1616"/>
+
+        <TextBox x:Name="numberTextBox"
+                 HorizontalAlignment="Left"
+                 Margin="180,176,0,0"
+                 TextWrapping="Wrap"
+                 Width="185"
+                 Height="40"
+                 FontSize="20"
+                 VerticalContentAlignment="Center"
+                 VerticalAlignment="Top"/>
+
+        <Button x:Name="computeButton"
+                Content="顯示N*N乘法表"
+                HorizontalAlignment="Left"
+                Margin="428,176,0,0"
+                VerticalAlignment="Top"
+                Height="49"
+                Width="177"
+                FontSize="22"
+                FontWeight="Bold"
+                Click="computeButton_Click"/>
+
+        <TextBlock x:Name="resultTextBlock"
+                   Margin="32,249,32,33"
+                   TextWrapping="Wrap"
+                   FontSize="18"
+                   Padding="10,10,10,10" Foreground="White">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF95BB9B" Offset="1"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
 
     </Grid>
 </Window>
